@@ -24,11 +24,20 @@
 
     <TextView
         android:layout_width="@android:dimen/thumbnail_width"
-        android:layout_height="@android:dimen/thumbnail_height"
+        android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Medium Text"
         android:id="@+id/textView2"
         android:layout_below="@id/textView"
+        android:layout_toRightOf="@id/imageView"
+        />
+    <TextView
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/tvRating"
+        android:layout_below="@id/textView2"
         android:layout_toRightOf="@id/imageView"
         />
 

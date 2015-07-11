@@ -70,6 +70,8 @@ public class MovieDetailFragment extends Fragment {
                 tv.setText(jsonObject.getString("release_date").substring(0, 4));
                 tv = ((TextView) container.findViewById(R.id.tvOverview));
                 tv.setText(jsonObject.getString("overview"));
+                tv = ((TextView) container.findViewById(R.id.tvRating));
+                tv.setText(jsonObject.getString("vote_average"));
             } catch (JSONException e) {
                 e.printStackTrace();
             }
